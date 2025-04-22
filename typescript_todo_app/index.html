@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Typescript Todo App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Todos</h1>
+            <small>Made with Typescript</small>
+        </header>
+        <section class="input-section">
+            <input type="text" id="new-task" placeholder="Add a new task...">
+            <button id="add-button">Add</button>
+        </section>
+        <section class="list-section">
+            <ul id="task-list">
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="task-text">Example Task 1</span>
+                    <button class="delete-button">Delete</button>
+                </li>
+                <li class="task-item completed">
+                    <input type="checkbox" class="task-checkbox" checked>
+                    <span class="task-text">Completed Task</span>
+                    <button class="delete-button">Delete</button>
+                </li>
+            </ul>
+            <div class="empty-message" id="empty-list-message">
+                <p>No tasks yet. Add some!</p>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script> </body>
+</html>
